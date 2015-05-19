@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: #CBE86B;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+}
+
+#week {
+    font-size: 96px;
+    text-align: center;
+}
+
+#period {
+    text-align: center;
+}
