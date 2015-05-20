@@ -8,8 +8,20 @@ body {
 #week {
     font-size: 96px;
     text-align: center;
+    display: block;
+    background-color: #CBE86B;
+    border: 2px solid #CBE86B;
+    border-bottom: 2px solid #000;
+    width: 2em;
+    margin: 1em auto 0 auto;
+}
+
+#week:focus {
+    outline: 0;
+    border: 2px solid #000;
 }
 
 #period {
     text-align: center;
+    margin-top: 1em;
 }

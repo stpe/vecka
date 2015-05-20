@@ -1,9 +1,18 @@
 var week = document.getElementById('week');
 var period = document.getElementById('period');
 
-var moment = moment();
 moment.locale('sv');
 
+var now = moment();
 
-week.innerHTML = moment.week();
-period.innerHTML = moment.startOf('week').format("D MMM") + ' - ' + moment.endOf('week').format("D MMM");
+week.value = now.week();
+update(now);
+
+week.addEventListener('change', function(e) {
+    console.log(week.value);
+    update( moment().week(week.value) );
+});
+
+function update(m) {
+    period.innerHTML = m.startOf('week').format("D MMM") + ' - ' + m.endOf('week').format("D MMM");
+}
