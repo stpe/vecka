@@ -10,10 +10,13 @@ body {
     text-align: center;
     display: block;
     background-color: #CBE86B;
-    border: 2px solid #CBE86B;
+    border: 0;
     border-bottom: 2px solid #000;
     width: 2em;
     margin: 1em auto 0 auto;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 #week:focus {
